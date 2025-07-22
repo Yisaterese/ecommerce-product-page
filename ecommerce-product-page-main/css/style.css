@@ -11,7 +11,7 @@ body {
     /*margin: 0 25px 0 25px ;*/
 
     align-items: center;
-    padding: 30px 0 50px 0;
+    padding: 20px 0 30px 0;
     width: 100%;
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -136,5 +136,44 @@ header {
         display: flex;
     }
 }
+.product-page {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
 
+.thumbnail:hover, .thumbnail.active {
+    border-color: hsl(26, 100%, 55%);
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.main-image {
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+}
 /* JavaScript Integration (to be added to js/script.js) */
